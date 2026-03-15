@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Reviews & Referral – Og Chinos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        :root {
+            --primary: #2563eb; --secondary: #16a34a; --accent: #eab308;
+            --dark: #0f172a; --light: #f8fafc; --gray: #64748b; --light-gray: #e2e8f0;
+            --shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
+        }
+        body { background: #fff; color: var(--dark); line-height: 1.6; }
+        nav {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 1.2rem 5%; background: white; box-shadow: 0 4px 6px -2px rgba(0,0,0,0.05);
+            position: sticky; top: 0; z-index: 100; flex-wrap: wrap;
+        }
+        .logo { font-size: 1.7rem; font-weight: 800; color: var(--dark); }
+        .logo i { color: var(--secondary); margin-right: 8px; }
+        .nav-links { display: flex; gap: 2rem; list-style: none; flex-wrap: wrap; }
+        .nav-links a {
+            text-decoration: none; font-weight: 600; color: var(--dark-light);
+            padding-bottom: 4px; border-bottom: 2px solid transparent;
+        }
+        .nav-links a:hover { color: var(--primary); border-bottom-color: var(--secondary); }
+        .section-header { text-align: center; margin: 2rem 5% 1rem; }
+        .section-header h2 { font-size: 2.5rem; font-weight: 700; }
+        .section-header p { color: var(--gray); }
+        .review-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 2rem; max-width: 1200px; margin: 2rem auto; padding: 0 5%;
+        }
+        .review-card {
+            background: white; border-radius: 24px; padding: 2rem;
+            box-shadow: var(--shadow); border: 1px solid var(--light-gray);
+        }
+        .review-card i.fa-quote-left { color: var(--accent); font-size: 2rem; opacity: 0.5; margin-bottom: 1rem; }
+        .review-card p { font-size: 1.1rem; font-style: italic; margin-bottom: 1.2rem; }
+        .reviewer { display: flex; align-items: center; gap: 1rem; }
+        .reviewer i { font-size: 2.5rem; color: var(--primary); }
+        .reviewer h4 { font-weight: 700; }
+        .reviewer span { color: var(--gray); font-size: 0.9rem; }
+        .referral-highlight {
+            background: linear-gradient(145deg, var(--dark), #1a2e3f); color: white;
+            border-radius: 32px; padding: 2.5rem; text-align: center;
+            max-width: 800px; margin: 3rem auto; border: 1px solid #334155;
+        }
+        .referral-highlight h3 { font-size: 2rem; margin-bottom: 1rem; }
+        .referral-highlight .big { font-size: 3rem; font-weight: 800; color: var(--accent); }
+        .btn-primary {
+            display: inline-block; background: var(--accent); color: var(--dark);
+            padding: 0.9rem 2.2rem; border-radius: 60px; font-weight: 600;
+            text-decoration: none; margin-top: 1.5rem;
+        }
+        .footer {
+            background: var(--light); padding: 3rem 5% 1rem; border-top: 1px solid var(--light-gray);
+        }
+        .footer-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2.5rem; max-width: 1200px; margin: 0 auto;
+        }
+        .footer-col h4 { font-size: 1.3rem; font-weight: 700; margin-bottom: 1.5rem; }
+        .footer-col ul { list-style: none; }
+        .footer-col ul li { margin-bottom: 0.8rem; }
+        .footer-col ul li a { text-decoration: none; color: var(--gray); }
+        .social-icons a {
+            background: white; width: 40px; height: 40px; border-radius: 50%;
+            display: inline-flex; align-items: center; justify-content: center;
+            margin-right: 0.5rem; color: var(--primary); box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+        .copyright { text-align: center; padding: 2rem 5% 1rem; color: var(--gray); }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo"><i class="fas fa-bolt"></i> Og Chinos Enterprise</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fans.html">Fans, Cameras & Bikes</a></li>
+            <li><a href="solar.html">Solar & Inverters</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+        </ul>
+    </nav>
+
+    <div class="section-header">
+        <h2>💬 Customer Reviews & Referral Perks</h2>
+        <p>What Calabar neighbours say about us + how you earn.</p>
+    </div>
+
+    <div class="review-grid">
+        <div class="review-card">
+            <i class="fas fa-quote-left"></i>
+            <p>"The solar fan I bought works even during long outages. Fast delivery to my door!"</p>
+            <div class="reviewer"><i class="fas fa-user-circle"></i><div><h4>Emeka O.</h4><span>Calabar South</span></div></div>
+        </div>
+        <div class="review-card">
+            <i class="fas fa-quote-left"></i>
+            <p>"I installed the PTZ camera with solar – the AI detection is spot on. Referred two friends already."</p>
+            <div class="reviewer"><i class="fas fa-user-circle"></i><div><h4>Grace U.</h4><span>State Housing</span></div></div>
+        </div>
+        <div class="review-card">
+            <i class="fas fa-quote-left"></i>
+            <p>"Ordered an electric bike on Monday, got it Tuesday. Battery lasts all week. Og Chinos is reliable!"</p>
+            <div class="reviewer"><i class="fas fa-user-circle"></i><div><h4>Michael A.</h4><span>University of Calabar</span></div></div>
+        </div>
+        <div class="review-card">
+            <i class="fas fa-quote-left"></i>
+            <p>"The 350W panel + inverter runs my shop for 8hrs straight. Thank you for the installation tips."</p>
+            <div class="reviewer"><i class="fas fa-user-circle"></i><div><h4>Chioma N.</h4><span>Watt Market</span></div></div>
+        </div>
+    </div>
+
+    <!-- Referral benefits -->
+    <div class="referral-highlight">
+        <i class="fas fa-gift" style="font-size:3.5rem; color:var(--accent); margin-bottom:1rem;"></i>
+        <h3>Refer & earn instant rewards</h3>
+        <p>Tell a friend about us. When they buy any solar product, you get <span class="big">10% commission</span> or a free solar lamp!</p>
+        <p style="margin-top:1.5rem;">👉 Share your unique code: <strong>OG-CALABAR</strong> – we track referrals easily.</p>
+        <a href="https://wa.me/2348146345280?text=I%20want%20to%20refer%20someone%20(my%20code%20OG-CALABAR)" class="btn-primary"><i class="fab fa-whatsapp"></i> Refer now on WhatsApp</a>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Og Chinos Enterprise</h4>
+                <ul>
+                    <li><i class="fas fa-phone"></i> <a href="tel:+2348146345280">+234 814 634 5280</a></li>
+                    <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/2348146345280">WhatsApp</a></li>
+                    <li><i class="fas fa-map-pin"></i> Calabar, Nigeria</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Quick links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fans.html">Fans, cameras, bikes</a></li>
+                    <li><a href="solar.html">Solar & inverters</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">© 2025 Og Chinos Enterprise – powered by the sun, trusted in Calabar.</div>
+    </footer>
+</body>
+</html>
