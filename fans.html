@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fans, Cameras & Bikes – Og Chinos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* same base styles as index, plus product card specifics */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        :root {
+            --primary: #2563eb; --secondary: #16a34a; --accent: #eab308;
+            --dark: #0f172a; --light: #f8fafc; --gray: #64748b; --light-gray: #e2e8f0;
+            --shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
+            --border-radius: 24px;
+        }
+        body { background: #fff; color: var(--dark); line-height: 1.6; }
+        nav {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 1.2rem 5%; background: white; box-shadow: 0 4px 6px -2px rgba(0,0,0,0.05);
+            position: sticky; top: 0; z-index: 100; flex-wrap: wrap;
+        }
+        .logo { font-size: 1.7rem; font-weight: 800; color: var(--dark); }
+        .logo i { color: var(--secondary); margin-right: 8px; }
+        .nav-links { display: flex; gap: 2rem; list-style: none; flex-wrap: wrap; }
+        .nav-links a {
+            text-decoration: none; font-weight: 600; color: var(--dark-light);
+            padding-bottom: 4px; border-bottom: 2px solid transparent;
+        }
+        .nav-links a:hover { color: var(--primary); border-bottom-color: var(--secondary); }
+        .section-header { text-align: center; margin: 2rem 5% 1rem; }
+        .section-header h2 { font-size: 2.5rem; font-weight: 700; }
+        .section-header p { color: var(--gray); }
+        .category-title {
+            font-size: 2rem; font-weight: 700; margin: 2.5rem 5% 1.5rem;
+            border-left: 8px solid var(--secondary); padding-left: 1.2rem;
+        }
+        .product-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem; max-width: 1300px; margin: 0 auto 3rem; padding: 0 5%;
+        }
+        .product-card {
+            background: white; border-radius: 20px; box-shadow: var(--shadow);
+            padding: 1.8rem 1.2rem 1.5rem; text-align: center; transition: 0.2s;
+            border: 1px solid var(--light-gray);
+        }
+        .product-card:hover { transform: translateY(-5px); border-color: var(--secondary); }
+        .product-img {
+            background: #eef2ff; border-radius: 16px; padding: 1.5rem 0.5rem;
+            margin-bottom: 1rem; color: var(--primary); font-size: 3.5rem;
+        }
+        .product-card h4 { font-size: 1.3rem; font-weight: 700; margin: 0.5rem 0 0.3rem; }
+        .product-card p { color: var(--gray); font-size: 0.95rem; margin-bottom: 1.2rem; }
+        .whatsapp-btn {
+            display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+            background: #25D366; color: white; padding: 0.7rem 1.2rem; border-radius: 40px;
+            text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: 0.2s;
+            width: 100%; border: none;
+        }
+        .whatsapp-btn:hover { background: #20b859; }
+        .footer {
+            background: var(--light); padding: 3rem 5% 1rem; border-top: 1px solid var(--light-gray);
+        }
+        .footer-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2.5rem; max-width: 1200px; margin: 0 auto;
+        }
+        .footer-col h4 { font-size: 1.3rem; font-weight: 700; margin-bottom: 1.5rem; }
+        .footer-col ul { list-style: none; }
+        .footer-col ul li { margin-bottom: 0.8rem; }
+        .footer-col ul li a { text-decoration: none; color: var(--gray); }
+        .social-icons a {
+            background: white; width: 40px; height: 40px; border-radius: 50%;
+            display: inline-flex; align-items: center; justify-content: center;
+            margin-right: 0.5rem; color: var(--primary); box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+        .copyright { text-align: center; padding: 2rem 5% 1rem; color: var(--gray); }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo"><i class="fas fa-bolt"></i> Og Chinos Enterprise</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fans.html">Fans, Cameras & Bikes</a></li>
+            <li><a href="solar.html">Solar & Inverters</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+        </ul>
+    </nav>
+
+    <div class="section-header">
+        <h2>⚡ Fans · Cameras · Bikes</h2>
+        <p>Click any 'Order now' to chat on WhatsApp – we'll help you choose.</p>
+    </div>
+
+    <!-- Fans (3 items) -->
+    <h3 class="category-title"><i class="fas fa-fan" style="margin-right: 10px;"></i> Solar Fans</h3>
+    <div class="product-grid">
+        <div class="product-card">
+            <div class="product-img"><i class="fas fa-fan"></i></div>
+            <h4>Standing Fan 18"</h4><p>Rechargeable, DC motor, 12hr backup</p>
+            <a class="whatsapp-btn" href="https://wa.me/2348146345280?text=I'm%20interested%20in%20Standing%20Fan%2018%22%20(solar)" target="_blank"><i class="fab fa-whatsapp"></i> Order now</a>
+        </div>
+        <div class="product-card">
+            <div class="product-img"><i class="fas fa-fan"></i></div>
+            <h4>Ceiling Fan Solar</h4><p>Remote control, 3 speeds, solar ready</p>
+            <a class="whatsapp-btn" href="https://wa.me/2348146345280?text=I'm%20interested%20in%20Ceiling%20Fan%20Solar" target="_blank"><i class="fab fa-whatsapp"></i> Order now</a>
+        </div>
+        <div class="product-card">
+            <div class="product-img"><i class="fas fa-fan"></i></div>
+            <h4>Table Fan 12"</h4><p>Portable, USB charging, low noise</p>
+            <a class="whatsapp-btn" href="https://wa.me/2348146345280?text=I'm%20interested%20in%20Table%20Fan%2012%22%20solar" target="_blank"><i class="fab fa-whatsapp"></i> Order now</a>
+        </div>
+    </div>
+
+    <!-- Cameras (3 items) -->
+    <h3 class="category-title"><i class="fas fa-video" style="margin-right: 10px;"></i> AI PTZ & Security Cameras</h3>
+    <div class="product-grid">
+        <div class="product-card">
+            <div class="product-img"><i class="fas fa-camera"></i></div>
+            <h4>PTZ Solar Camera</h4><p>360° view, AI human detection, 4MP</p>
+            <a class="whatsapp-btn" href="https://wa.me/2348146345280?text=I'm%20interested%20in%20PTZ%20Solar%20Camera" target="_blank"><i class="fab fa-whatsapp"></i> Order now</a>
+        </div>
+        <div class="product-card">
+            <div class="product-img"><i class="fas fa-camera-retro"></i></div>
+            <h4>Bullet Solar Cam</h4><p>Night vision, 2-way audio, 1080p</p>
+            <a class="whatsapp-btn" href="https://wa.me/2348146345280?text=I'm%20interested%20in%20Bullet%20Solar%20Camera" target="_blank"><i class="fab fa-whatsapp"></i> Order now</a>
+        </div>
+        <div class="product-card">
+            <div class="product-img"><i class="fas fa-door-open"></i></div>
+            <h4>Doorbell Camera</h4><p>Wireless, solar option, smart alerts</p>
+            <a class="whatsapp-btn" href="https://wa.me/2348146345280?text=I'm%20interested%20in%20Doorbell%20Camera" target="_blank"><i class="fab fa-whatsapp"></i> Order now</a>
+        </div>
+    </div>
+
+    <!-- Bikes (3 items) -->
+    <h3 class="category-title"><i class="fas fa-bicycle" style="margin-right: 10px;"></i> Electric Bikes</h3>
+    <div class="product-grid">
+        <div class="product-card">
+            <div class="product-img"><i class="fas fa-motorcycle"></i></div>
+            <h4>City E‑Bike</h4><p>36V lithium, 50km range, removable battery</p>
+            <a class="whatsapp-btn" href="https://wa.me/2348146345280?text=I'm%20interested%20in%20City%20E-Bike" target="_blank"><i class="fab fa-whatsapp"></i> Order now</a>
+        </div>
+        <div class="product-card">
+            <div class="product-img"><i class="fas fa-bicycle"></i></div>
+            <h4>Mountain E‑Bike</h4><p>All terrain, 21 speeds, fat tyres</p>
+            <a class="whatsapp-btn" href="https://wa.me/2348146345280?text=I'm%20interested%20in%20Mountain%20E-Bike" target="_blank"><i class="fab fa-whatsapp"></i> Order now</a>
+        </div>
+        <div class="product-card">
+            <div class="product-img"><i class="fas fa-child"></i></div>
+            <h4>Folding E‑Bike</h4><p>Lightweight, portable, ideal for commute</p>
+            <a class="whatsapp-btn" href="https://wa.me/2348146345280?text=I'm%20interested%20in%20Folding%20E-Bike" target="_blank"><i class="fab fa-whatsapp"></i> Order now</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Og Chinos Enterprise</h4>
+                <ul>
+                    <li><i class="fas fa-phone"></i> <a href="tel:+2348146345280">+234 814 634 5280</a></li>
+                    <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/2348146345280">WhatsApp</a></li>
+                    <li><i class="fas fa-map-pin"></i> Calabar, Nigeria</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Quick links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fans.html">Fans, cameras, bikes</a></li>
+                    <li><a href="solar.html">Solar & inverters</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">© 2025 Og Chinos Enterprise – powered by the sun, trusted in Calabar.</div>
+    </footer>
+</body>
+</html>
