@@ -3,498 +3,157 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Og Chinos · Solar, Fans, Cameras, Bikes | Calabar</title>
-    <!-- Google Font & Font Awesome -->
+    <title>Og Chinos Enterprise – Home | Solar & Electronics Calabar</title>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        * {
-            margin: 0;
-            padding: 0;
-            box-sizing: border-box;
-            font-family: 'Inter', sans-serif;
-        }
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
         :root {
-            --primary: #2563eb;
-            --secondary: #16a34a;
-            --accent: #eab308;
-            --dark: #0f172a;
-            --dark-light: #1e293b;
-            --light: #f8fafc;
-            --gray: #64748b;
-            --light-gray: #e2e8f0;
+            --primary: #2563eb; --secondary: #16a34a; --accent: #eab308;
+            --dark: #0f172a; --light: #f8fafc; --gray: #64748b; --light-gray: #e2e8f0;
             --shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
             --border-radius: 24px;
         }
-        body {
-            background-color: #ffffff;
-            color: var(--dark);
-            line-height: 1.6;
-        }
-        /* navigation */
+        body { background: #fff; color: var(--dark); line-height: 1.6; }
         nav {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 1.2rem 5%;
-            background: white;
-            box-shadow: 0 4px 6px -2px rgba(0,0,0,0.05);
-            position: sticky;
-            top: 0;
-            z-index: 100;
-            flex-wrap: wrap;
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 1.2rem 5%; background: white; box-shadow: 0 4px 6px -2px rgba(0,0,0,0.05);
+            position: sticky; top: 0; z-index: 100; flex-wrap: wrap;
         }
-        .logo {
-            font-size: 1.7rem;
-            font-weight: 800;
-            color: var(--dark);
-            letter-spacing: -0.02em;
-        }
-        .logo i {
-            color: var(--secondary);
-            margin-right: 8px;
-        }
-        .nav-links {
-            display: flex;
-            gap: 2rem;
-            list-style: none;
-            flex-wrap: wrap;
-        }
+        .logo { font-size: 1.7rem; font-weight: 800; color: var(--dark); }
+        .logo i { color: var(--secondary); margin-right: 8px; }
+        .nav-links { display: flex; gap: 2rem; list-style: none; flex-wrap: wrap; }
         .nav-links a {
-            text-decoration: none;
-            font-weight: 600;
-            color: var(--dark-light);
-            transition: 0.2s;
-            font-size: 1rem;
-            padding: 0.5rem 0.2rem;
-            border-bottom: 2px solid transparent;
-            cursor: pointer;
+            text-decoration: none; font-weight: 600; color: var(--dark-light);
+            padding-bottom: 4px; border-bottom: 2px solid transparent;
         }
-        .nav-links a:hover, .nav-links a.active-page {
-            color: var(--primary);
-            border-bottom-color: var(--secondary);
-        }
-
-        /* page container & pages */
-        .pages-container {
-            min-height: 60vh;
-        }
-        .page {
-            display: none;
-            padding: 2rem 5% 3rem;
-        }
-        .page.active-page {
-            display: block;
-        }
-
-        /* hero section (home) */
+        .nav-links a:hover { color: var(--primary); border-bottom-color: var(--secondary); }
         .hero {
             background: linear-gradient(135deg, #f1f5f9 0%, #ffffff 100%);
-            padding: 3rem 0;
-            border-radius: 0 0 40px 40px;
+            padding: 3rem 5%; display: flex; align-items: center;
         }
-        .hero-container {
-            display: flex;
-            max-width: 1300px;
-            margin: 0 auto;
-            align-items: center;
-            gap: 3rem;
-            flex-wrap: wrap;
-        }
-        .hero-content {
-            flex: 1 1 500px;
-        }
+        .hero-container { display: flex; max-width: 1300px; margin: 0 auto; align-items: center; gap: 3rem; flex-wrap: wrap; }
+        .hero-content { flex: 1 1 500px; }
         .hero-badge {
-            background: rgba(22, 163, 74, 0.1);
-            color: var(--secondary);
-            font-weight: 600;
-            padding: 0.5rem 1.5rem;
-            border-radius: 40px;
-            display: inline-block;
-            margin-bottom: 1.8rem;
-            font-size: 0.9rem;
+            background: rgba(22, 163, 74, 0.1); color: var(--secondary); font-weight: 600;
+            padding: 0.5rem 1.5rem; border-radius: 40px; display: inline-block; margin-bottom: 1.8rem;
             border: 1px solid rgba(22,163,74,0.3);
         }
-        .hero h1 {
-            font-size: 3.2rem;
-            font-weight: 800;
-            line-height: 1.2;
-            margin-bottom: 1.5rem;
-        }
-        .hero h1 span {
-            color: var(--primary);
-            background: linear-gradient(145deg, var(--primary), #1d4ed8);
-            -webkit-background-clip: text;
-            -webkit-text-fill-color: transparent;
-            background-clip: text;
-        }
-        .hero p {
-            font-size: 1.2rem;
-            color: var(--gray);
-            max-width: 700px;
-            margin: 0 0 2.5rem 0;
-        }
-        .hero-buttons {
-            display: flex;
-            gap: 1.2rem;
-            flex-wrap: wrap;
-        }
+        .hero h1 { font-size: 3.2rem; font-weight: 800; line-height: 1.2; margin-bottom: 1.5rem; }
+        .hero h1 span { color: var(--primary); background: linear-gradient(145deg, var(--primary), #1d4ed8); -webkit-background-clip: text; -webkit-text-fill-color: transparent; }
+        .hero p { font-size: 1.2rem; color: var(--gray); max-width: 700px; margin: 0 0 2.5rem; }
+        .hero-buttons { display: flex; gap: 1.2rem; flex-wrap: wrap; }
         .btn {
-            display: inline-flex;
-            align-items: center;
-            gap: 10px;
-            padding: 0.9rem 2.2rem;
-            border-radius: 60px;
-            font-weight: 600;
-            text-decoration: none;
-            transition: all 0.2s;
-            font-size: 1.1rem;
+            display: inline-flex; align-items: center; gap: 10px; padding: 0.9rem 2.2rem;
+            border-radius: 60px; font-weight: 600; text-decoration: none; transition: 0.2s; font-size: 1.1rem;
         }
-        .btn-primary {
-            background: var(--primary);
-            color: white;
-            box-shadow: 0 8px 16px -4px rgba(37,99,235,0.3);
-        }
-        .btn-primary:hover {
-            background: #1d4ed8;
-            transform: scale(1.02);
-        }
-        .btn-secondary {
-            background: white;
-            color: var(--dark);
-            border: 1px solid var(--light-gray);
-        }
-        .btn-secondary:hover {
-            background: var(--light);
-            border-color: var(--gray);
-        }
-
-        /* section headers */
-        .section-header {
-            text-align: center;
-            margin-bottom: 3rem;
-        }
-        .section-header h2 {
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--dark);
-            margin-bottom: 0.8rem;
-        }
-        .section-header p {
-            font-size: 1.2rem;
-            color: var(--gray);
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
-        /* features grid (home) */
+        .btn-primary { background: var(--primary); color: white; box-shadow: 0 8px 16px -4px rgba(37,99,235,0.3); }
+        .btn-primary:hover { background: #1d4ed8; transform: scale(1.02); }
+        .btn-secondary { background: white; color: var(--dark); border: 1px solid var(--light-gray); }
+        .section-header { text-align: center; margin-bottom: 3rem; }
+        .section-header h2 { font-size: 2.5rem; font-weight: 700; margin-bottom: 0.8rem; }
+        .section-header p { font-size: 1.2rem; color: var(--gray); max-width: 700px; margin: 0 auto; }
         .features-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
-            gap: 2rem;
-            max-width: 1300px;
-            margin: 0 auto;
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 2rem; max-width: 1300px; margin: 0 auto; padding: 2rem 5%;
         }
         .feature-card {
-            background: white;
-            padding: 2rem 1.5rem;
-            border-radius: var(--border-radius);
-            box-shadow: var(--shadow);
-            border: 1px solid rgba(0,0,0,0.02);
+            background: white; padding: 2rem 1.5rem; border-radius: var(--border-radius);
+            box-shadow: var(--shadow); text-align: center;
         }
-        .feature-icon {
-            font-size: 2.5rem;
-            color: var(--secondary);
-            margin-bottom: 1rem;
-        }
-        .feature-card h3 {
-            font-size: 1.4rem;
-            font-weight: 700;
-            margin-bottom: 0.5rem;
-        }
-
-        /* product cards (for pages) */
-        .category-title {
-            font-size: 2rem;
-            font-weight: 700;
-            margin: 2.5rem 0 1.5rem;
-            color: var(--dark);
-            border-left: 8px solid var(--secondary);
-            padding-left: 1.2rem;
-        }
-        .product-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-            gap: 2rem;
-            margin-bottom: 3rem;
-        }
-        .product-card {
-            background: white;
-            border-radius: 20px;
-            box-shadow: var(--shadow);
-            padding: 1.8rem 1.2rem 1.5rem;
-            text-align: center;
-            transition: 0.2s;
-            border: 1px solid var(--light-gray);
-        }
-        .product-card:hover {
-            transform: translateY(-5px);
-            border-color: var(--secondary);
-        }
-        .product-img {
-            background: #eef2ff;
-            border-radius: 16px;
-            padding: 1.5rem 0.5rem;
-            margin-bottom: 1rem;
-            color: var(--primary);
-            font-size: 3.5rem;
-        }
-        .product-card h4 {
-            font-size: 1.3rem;
-            font-weight: 700;
-            margin: 0.5rem 0 0.3rem;
-        }
-        .product-card p {
-            color: var(--gray);
-            font-size: 0.95rem;
-            margin-bottom: 1.2rem;
-        }
-        .whatsapp-btn {
-            display: inline-flex;
-            align-items: center;
-            justify-content: center;
-            gap: 8px;
-            background: #25D366;
-            color: white;
-            padding: 0.7rem 1.2rem;
-            border-radius: 40px;
-            text-decoration: none;
-            font-weight: 600;
-            font-size: 0.95rem;
-            transition: 0.2s;
-            width: 100%;
-            border: none;
-        }
-        .whatsapp-btn i {
-            font-size: 1.2rem;
-        }
-        .whatsapp-btn:hover {
-            background: #20b859;
-        }
-
-        /* reviews page */
-        .review-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
-            gap: 2rem;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
-        .review-card {
-            background: white;
-            border-radius: 24px;
-            padding: 2rem;
-            box-shadow: var(--shadow);
-            border: 1px solid var(--light-gray);
-        }
-        .review-card i.fa-quote-left {
-            color: var(--accent);
-            font-size: 2rem;
-            opacity: 0.5;
-            margin-bottom: 1rem;
-        }
-        .review-card p {
-            font-size: 1.1rem;
-            font-style: italic;
-            margin-bottom: 1.2rem;
-        }
-        .reviewer {
-            display: flex;
-            align-items: center;
-            gap: 1rem;
-        }
-        .reviewer img {
-            width: 48px;
-            height: 48px;
-            border-radius: 50%;
-            background: #cbd5e1;
-        }
-        .reviewer h4 {
-            font-weight: 700;
-        }
-        .reviewer span {
-            color: var(--gray);
-            font-size: 0.9rem;
-        }
-        .referral-highlight {
-            background: linear-gradient(145deg, var(--dark), #1a2e3f);
-            color: white;
-            border-radius: 32px;
-            padding: 2.5rem;
-            text-align: center;
-            max-width: 800px;
-            margin: 3rem auto 0;
-        }
-        .referral-highlight h3 {
-            font-size: 2rem;
-            margin-bottom: 1rem;
-        }
-        .referral-highlight .big {
-            font-size: 3rem;
-            font-weight: 800;
-            color: var(--accent);
-        }
-
-        /* locations & footer (common) */
-        .locations {
-            padding: 3rem 5% 2rem;
-            background: var(--light);
+        .feature-icon { font-size: 2.5rem; color: var(--secondary); margin-bottom: 1rem; }
+        .feature-card h3 { font-size: 1.5rem; font-weight: 700; margin-bottom: 0.5rem; }
+        .footer {
+            background: var(--light); padding: 3rem 5% 1rem; border-top: 1px solid var(--light-gray);
         }
         .footer-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 2.5rem;
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 3rem 5% 1rem;
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2.5rem; max-width: 1200px; margin: 0 auto;
         }
-        .footer-col h4 {
-            font-size: 1.3rem;
-            font-weight: 700;
-            margin-bottom: 1.5rem;
-        }
-        .footer-col ul {
-            list-style: none;
-        }
-        .footer-col ul li {
-            margin-bottom: 0.8rem;
-        }
-        .footer-col ul li a {
-            text-decoration: none;
-            color: var(--gray);
-        }
-        .social-icons {
-            display: flex;
-            gap: 1.2rem;
-        }
+        .footer-col h4 { font-size: 1.3rem; font-weight: 700; margin-bottom: 1.5rem; }
+        .footer-col ul { list-style: none; }
+        .footer-col ul li { margin-bottom: 0.8rem; }
+        .footer-col ul li a { text-decoration: none; color: var(--gray); }
         .social-icons a {
-            background: white;
-            width: 40px;
-            height: 40px;
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            box-shadow: 0 4px 8px rgba(0,0,0,0.05);
-            color: var(--primary);
-            font-size: 1.2rem;
+            background: white; width: 40px; height: 40px; border-radius: 50%;
+            display: inline-flex; align-items: center; justify-content: center;
+            margin-right: 0.5rem; color: var(--primary); box-shadow: 0 4px 8px rgba(0,0,0,0.05);
         }
-        .copyright {
-            text-align: center;
-            padding: 2rem 5% 1rem;
-            color: var(--gray);
-            font-size: 0.9rem;
-        }
-
-        @media (max-width: 700px) {
-            .hero h1 { font-size: 2.5rem; }
-            .nav-links { gap: 1rem; }
-        }
+        .copyright { text-align: center; padding: 2rem 5% 1rem; color: var(--gray); }
     </style>
 </head>
 <body>
-    <!-- Navigation (page switcher) -->
     <nav>
         <div class="logo"><i class="fas fa-bolt"></i> Og Chinos Enterprise</div>
         <ul class="nav-links">
-            <li><a class="page-link active-page" data-page="home">Home</a></li>
-            <li><a class="page-link" data-page="fans">Fans, Cameras & Bikes</a></li>
-            <li><a class="page-link" data-page="solar">Solar & Inverters</a></li>
-            <li><a class="page-link" data-page="reviews">Reviews</a></li>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fans.html">Fans, Cameras & Bikes</a></li>
+            <li><a href="solar.html">Solar & Inverters</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
         </ul>
     </nav>
 
-    <!-- Pages container -->
-    <div class="pages-container">
-        <!-- H O M E   P A G E (original style, simplified) -->
-        <div id="home" class="page active-page">
-            <section class="hero">
-                <div class="hero-container">
-                    <div class="hero-content">
-                        <div class="hero-badge"><i class="fas fa-map-pin"></i> Calabar's trusted solar store</div>
-                        <h1>Premium Solar & Electronics <span>in Calabar</span></h1>
-                        <p>Solar fans, AI cameras, electric bikes, panels & inverters – all with fast delivery and WhatsApp ordering.</p>
-                        <div class="hero-buttons">
-                            <a href="tel:+2348146345280" class="btn btn-primary"><i class="fas fa-phone-alt"></i> +234 814 634 5280</a>
-                            <a href="#" class="btn btn-secondary page-link" data-page="fans"><i class="fas fa-arrow-right"></i> Shop now</a>
-                        </div>
-                    </div>
-                    <div class="hero-image">
-                        <div style="background: #d9e2ef; border-radius: 40px; padding: 2rem; text-align: center;">
-                            <i class="fas fa-sun" style="font-size: 5rem; color: var(--accent);"></i>
-                            <p style="font-weight: 600;">Power your life with solar</p>
-                        </div>
-                    </div>
+    <section class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-badge"><i class="fas fa-map-pin"></i> Calabar's trusted solar store</div>
+                <h1>Premium Solar & Electronics <span>in Calabar</span></h1>
+                <p>Solar fans, AI cameras, electric bikes, panels & inverters – all with fast delivery and WhatsApp ordering.</p>
+                <div class="hero-buttons">
+                    <a href="tel:+2348146345280" class="btn btn-primary"><i class="fas fa-phone-alt"></i> +234 814 634 5280</a>
+                    <a href="fans.html" class="btn btn-secondary"><i class="fas fa-arrow-right"></i> Shop now</a>
                 </div>
-            </section>
-
-            <section style="padding: 3rem 5%;">
-                <div class="section-header">
-                    <h2>Why choose us</h2>
-                    <p>Quality products, instant WhatsApp support, and Calabar's fastest delivery</p>
+            </div>
+            <div class="hero-image">
+                <div style="background: #d9e2ef; border-radius: 40px; padding: 2rem; text-align: center;">
+                    <i class="fas fa-sun" style="font-size: 5rem; color: var(--accent);"></i>
+                    <p style="font-weight: 600;">Power your life with solar</p>
                 </div>
-                <div class="features-grid">
-                    <div class="feature-card"><i class="fas fa-fan feature-icon"></i><h3>Solar fans</h3><p>Rechargeable, long life</p></div>
-                    <div class="feature-card"><i class="fas fa-video feature-icon"></i><h3>AI cameras</h3><p>Solar PTZ with alerts</p></div>
-                    <div class="feature-card"><i class="fas fa-bicycle feature-icon"></i><h3>Electric bikes</h3><p>Eco‑friendly commute</p></div>
-                    <div class="feature-card"><i class="fas fa-solar-panel feature-icon"></i><h3>Panels & inverters</h3><p>Full installation</p></div>
-                </div>
-            </section>
+            </div>
         </div>
+    </section>
 
-        <!-- F A N S ,  C A M E R A S ,  B I K E S  (9 pictures) -->
-        <div id="fans" class="page">
-            <div class="section-header" style="margin-top: 1rem;">
-                <h2>⚡ Fans · Cameras · Bikes</h2>
-                <p>Click any 'Order now' to chat on WhatsApp – we'll help you choose.</p>
-            </div>
-
-            <!-- Fans category (3 items) -->
-            <h3 class="category-title"><i class="fas fa-fan" style="margin-right: 10px;"></i> Solar Fans</h3>
-            <div class="product-grid" id="fans-grid">
-                <!-- 3 fan placeholders -->
-                <div class="product-card"><div class="product-img"><i class="fas fa-fan"></i></div><h4>Standing Fan 18"</h4><p>Rechargeable, DC motor, 12hr backup</p><a class="whatsapp-btn" href="https://wa.me/2348146345280?text=I'm%20interested%20in%20Standing%20Fan%2018%22%20(solar)" target="_blank"><i class="fab fa-whatsapp"></i> Order now</a></div>
-                <div class="product-card"><div class="product-img"><i class="fas fa-fan"></i></div><h4>Ceiling Fan Solar</h4><p>Remote control, 3 speeds, solar ready</p><a class="whatsapp-btn" href="https://wa.me/2348146345280?text=I'm%20interested%20in%20Ceiling%20Fan%20Solar" target="_blank"><i class="fab fa-whatsapp"></i> Order now</a></div>
-                <div class="product-card"><div class="product-img"><i class="fas fa-fan"></i></div><h4>Table Fan 12"</h4><p>Portable, USB charging, low noise</p><a class="whatsapp-btn" href="https://wa.me/2348146345280?text=I'm%20interested%20in%20Table%20Fan%2012%22%20solar" target="_blank"><i class="fab fa-whatsapp"></i> Order now</a></div>
-            </div>
-
-            <!-- Cameras category (3 items) -->
-            <h3 class="category-title"><i class="fas fa-video" style="margin-right: 10px;"></i> AI PTZ & Security Cameras</h3>
-            <div class="product-grid">
-                <div class="product-card"><div class="product-img"><i class="fas fa-camera"></i></div><h4>PTZ Solar Camera</h4><p>360° view, AI human detection, 4MP</p><a class="whatsapp-btn" href="https://wa.me/2348146345280?text=I'm%20interested%20in%20PTZ%20Solar%20Camera" target="_blank"><i class="fab fa-whatsapp"></i> Order now</a></div>
-                <div class="product-card"><div class="product-img"><i class="fas fa-camera-retro"></i></div><h4>Bullet Solar Cam</h4><p>Night vision, 2-way audio, 1080p</p><a class="whatsapp-btn" href="https://wa.me/2348146345280?text=I'm%20interested%20in%20Bullet%20Solar%20Camera" target="_blank"><i class="fab fa-whatsapp"></i> Order now</a></div>
-                <div class="product-card"><div class="product-img"><i class="fas fa-door-open"></i></div><h4>Doorbell Camera</h4><p>Wireless, solar option, smart alerts</p><a class="whatsapp-btn" href="https://wa.me/2348146345280?text=I'm%20interested%20in%20Doorbell%20Camera" target="_blank"><i class="fab fa-whatsapp"></i> Order now</a></div>
-            </div>
-
-            <!-- Bikes category (3 items) -->
-            <h3 class="category-title"><i class="fas fa-bicycle" style="margin-right: 10px;"></i> Electric Bikes</h3>
-            <div class="product-grid">
-                <div class="product-card"><div class="product-img"><i class="fas fa-motorcycle"></i></div><h4>City E‑Bike</h4><p>36V lithium, 50km range, removable battery</p><a class="whatsapp-btn" href="https://wa.me/2348146345280?text=I'm%20interested%20in%20City%20E-Bike" target="_blank"><i class="fab fa-whatsapp"></i> Order now</a></div>
-                <div class="product-card"><div class="product-img"><i class="fas fa-bicycle"></i></div><h4>Mountain E‑Bike</h4><p>All terrain, 21 speeds, fat tyres</p><a class="whatsapp-btn" href="https://wa.me/2348146345280?text=I'm%20interested%20in%20Mountain%20E-Bike" target="_blank"><i class="fab fa-whatsapp"></i> Order now</a></div>
-                <div class="product-card"><div class="product-img"><i class="fas fa-child"></i></div><h4>Folding E‑Bike</h4><p>Lightweight, portable, ideal for commute</p><a class="whatsapp-btn" href="https://wa.me/2348146345280?text=I'm%20interested%20in%20Folding%20E-Bike" target="_blank"><i class="fab fa-whatsapp"></i> Order now</a></div>
-            </div>
-            <p style="text-align:center; color:var(--gray); margin: 1rem 0 2rem;">👉 9 products ready – tap any "Order now" to message us.</p>
+    <section>
+        <div class="section-header">
+            <h2>Why choose us</h2>
+            <p>Quality products, instant WhatsApp support, and Calabar's fastest delivery</p>
         </div>
+        <div class="features-grid">
+            <div class="feature-card"><i class="fas fa-fan feature-icon"></i><h3>Solar fans</h3><p>Rechargeable, long life</p></div>
+            <div class="feature-card"><i class="fas fa-video feature-icon"></i><h3>AI cameras</h3><p>Solar PTZ with alerts</p></div>
+            <div class="feature-card"><i class="fas fa-bicycle feature-icon"></i><h3>Electric bikes</h3><p>Eco‑friendly commute</p></div>
+            <div class="feature-card"><i class="fas fa-solar-panel feature-icon"></i><h3>Panels & inverters</h3><p>Full installation</p></div>
+        </div>
+    </section>
 
-        <!-- S O L A R   P A N E L S   &   I N V E R T E R S  (7 pictures) -->
-        <div id="solar" class="page">
-            <div class="section-header" style="margin-top: 1rem;">
-                <h2>🔆 Solar Panels & Inverters</h2>
-                <p>High efficiency, durable, with installation support in Calabar.</p>
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Og Chinos Enterprise</h4>
+                <ul>
+                    <li><i class="fas fa-phone"></i> <a href="tel:+2348146345280">+234 814 634 5280</a></li>
+                    <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/2348146345280">WhatsApp</a></li>
+                    <li><i class="fas fa-map-pin"></i> Calabar, Nigeria</li>
+                </ul>
             </div>
-
-            <!-- Solar panels (3 items) -->
-            <h3 class="category-title"><i class="fas fa-solar-panel"></i> Solar Panels</h3>
-            <div class="product-grid">
-                <div class="product-card"><div class="product-img"><i class="fas fa-solar-panel"></i></div><h4>200W Mono Panel</h4><p>Efficiency 21%, 12V, waterproof</p><a class="whatsapp-btn" href="https://wa.me/2348146345280?text=I'm%20interested%20in%20200W%20Mono%20Solar%20Panel" target="_blank"><i class="fab fa-whatsapp"></i> Order now</a></div>
-                <div class="product-card"><div class="product-img"><i class="fas fa-solar-panel"></i></div><h4>350W Poly Panel</h4><p>Perfect for home systems, 24V</p><a class="whatsapp-btn" href="https://wa.me/2348146345280?text=I'm%20interested%20in%20350W%20Poly%20Solar%20Panel" target="_blank"><i clas
+            <div class="footer-col">
+                <h4>Quick links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fans.html">Fans, cameras, bikes</a></li>
+                    <li><a href="solar.html">Solar & inverters</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">© 2025 Og Chinos Enterprise – powered by the sun, trusted in Calabar.</div>
+    </footer>
+</body>
+</html>
