@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Solar Panels & Inverters – Og Chinos</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        /* same base styles as fans.html */
+        * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
+        :root {
+            --primary: #2563eb; --secondary: #16a34a; --accent: #eab308;
+            --dark: #0f172a; --light: #f8fafc; --gray: #64748b; --light-gray: #e2e8f0;
+            --shadow: 0 20px 25px -5px rgba(0,0,0,0.1), 0 10px 10px -5px rgba(0,0,0,0.04);
+            --border-radius: 24px;
+        }
+        body { background: #fff; color: var(--dark); line-height: 1.6; }
+        nav {
+            display: flex; justify-content: space-between; align-items: center;
+            padding: 1.2rem 5%; background: white; box-shadow: 0 4px 6px -2px rgba(0,0,0,0.05);
+            position: sticky; top: 0; z-index: 100; flex-wrap: wrap;
+        }
+        .logo { font-size: 1.7rem; font-weight: 800; color: var(--dark); }
+        .logo i { color: var(--secondary); margin-right: 8px; }
+        .nav-links { display: flex; gap: 2rem; list-style: none; flex-wrap: wrap; }
+        .nav-links a {
+            text-decoration: none; font-weight: 600; color: var(--dark-light);
+            padding-bottom: 4px; border-bottom: 2px solid transparent;
+        }
+        .nav-links a:hover { color: var(--primary); border-bottom-color: var(--secondary); }
+        .section-header { text-align: center; margin: 2rem 5% 1rem; }
+        .section-header h2 { font-size: 2.5rem; font-weight: 700; }
+        .section-header p { color: var(--gray); }
+        .category-title {
+            font-size: 2rem; font-weight: 700; margin: 2.5rem 5% 1.5rem;
+            border-left: 8px solid var(--secondary); padding-left: 1.2rem;
+        }
+        .product-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 2rem; max-width: 1300px; margin: 0 auto 3rem; padding: 0 5%;
+        }
+        .product-card {
+            background: white; border-radius: 20px; box-shadow: var(--shadow);
+            padding: 1.8rem 1.2rem 1.5rem; text-align: center; transition: 0.2s;
+            border: 1px solid var(--light-gray);
+        }
+        .product-card:hover { transform: translateY(-5px); border-color: var(--secondary); }
+        .product-img {
+            background: #eef2ff; border-radius: 16px; padding: 1.5rem 0.5rem;
+            margin-bottom: 1rem; color: var(--primary); font-size: 3.5rem;
+        }
+        .product-card h4 { font-size: 1.3rem; font-weight: 700; margin: 0.5rem 0 0.3rem; }
+        .product-card p { color: var(--gray); font-size: 0.95rem; margin-bottom: 1.2rem; }
+        .whatsapp-btn {
+            display: inline-flex; align-items: center; justify-content: center; gap: 8px;
+            background: #25D366; color: white; padding: 0.7rem 1.2rem; border-radius: 40px;
+            text-decoration: none; font-weight: 600; font-size: 0.95rem; transition: 0.2s;
+            width: 100%; border: none;
+        }
+        .whatsapp-btn:hover { background: #20b859; }
+        .footer {
+            background: var(--light); padding: 3rem 5% 1rem; border-top: 1px solid var(--light-gray);
+        }
+        .footer-grid {
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 2.5rem; max-width: 1200px; margin: 0 auto;
+        }
+        .footer-col h4 { font-size: 1.3rem; font-weight: 700; margin-bottom: 1.5rem; }
+        .footer-col ul { list-style: none; }
+        .footer-col ul li { margin-bottom: 0.8rem; }
+        .footer-col ul li a { text-decoration: none; color: var(--gray); }
+        .social-icons a {
+            background: white; width: 40px; height: 40px; border-radius: 50%;
+            display: inline-flex; align-items: center; justify-content: center;
+            margin-right: 0.5rem; color: var(--primary); box-shadow: 0 4px 8px rgba(0,0,0,0.05);
+        }
+        .copyright { text-align: center; padding: 2rem 5% 1rem; color: var(--gray); }
+    </style>
+</head>
+<body>
+    <nav>
+        <div class="logo"><i class="fas fa-bolt"></i> Og Chinos Enterprise</div>
+        <ul class="nav-links">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="fans.html">Fans, Cameras & Bikes</a></li>
+            <li><a href="solar.html">Solar & Inverters</a></li>
+            <li><a href="reviews.html">Reviews</a></li>
+        </ul>
+    </nav>
+
+    <div class="section-header">
+        <h2>🔆 Solar Panels & Inverters</h2>
+        <p>High efficiency, durable, with installation support in Calabar.</p>
+    </div>
+
+    <!-- Solar panels (3 items) -->
+    <h3 class="category-title"><i class="fas fa-solar-panel"></i> Solar Panels</h3>
+    <div class="product-grid">
+        <div class="product-card">
+            <div class="product-img"><i class="fas fa-solar-panel"></i></div>
+            <h4>200W Mono Panel</h4><p>Efficiency 21%, 12V, waterproof</p>
+            <a class="whatsapp-btn" href="https://wa.me/2348146345280?text=I'm%20interested%20in%20200W%20Mono%20Solar%20Panel" target="_blank"><i class="fab fa-whatsapp"></i> Order now</a>
+        </div>
+        <div class="product-card">
+            <div class="product-img"><i class="fas fa-solar-panel"></i></div>
+            <h4>350W Poly Panel</h4><p>Perfect for home systems, 24V</p>
+            <a class="whatsapp-btn" href="https://wa.me/2348146345280?text=I'm%20interested%20in%20350W%20Poly%20Solar%20Panel" target="_blank"><i class="fab fa-whatsapp"></i> Order now</a>
+        </div>
+        <div class="product-card">
+            <div class="product-img"><i class="fas fa-solar-panel"></i></div>
+            <h4>450W Bifacial</h4><p>Double-sided, 144 cells, 30% more power</p>
+            <a class="whatsapp-btn" href="https://wa.me/2348146345280?text=I'm%20interested%20in%20450W%20Bifacial%20Panel" target="_blank"><i class="fab fa-whatsapp"></i> Order now</a>
+        </div>
+    </div>
+
+    <!-- Inverters (4 items) -->
+    <h3 class="category-title"><i class="fas fa-microchip"></i> Inverters (Solar hybrid)</h3>
+    <div class="product-grid">
+        <div class="product-card">
+            <div class="product-img"><i class="fas fa-bolt"></i></div>
+            <h4>1kW Hybrid Inverter</h4><p>Pure sine wave, MPPT built-in</p>
+            <a class="whatsapp-btn" href="https://wa.me/2348146345280?text=I'm%20interested%20in%201kW%20Hybrid%20Inverter" target="_blank"><i class="fab fa-whatsapp"></i> Order now</a>
+        </div>
+        <div class="product-card">
+            <div class="product-img"><i class="fas fa-bolt"></i></div>
+            <h4>2.5kW Off-grid</h4><p>For fridges, TVs, fans, 24V system</p>
+            <a class="whatsapp-btn" href="https://wa.me/2348146345280?text=I'm%20interested%20in%202.5kW%20Off-grid%20Inverter" target="_blank"><i class="fab fa-whatsapp"></i> Order now</a>
+        </div>
+        <div class="product-card">
+            <div class="product-img"><i class="fas fa-bolt"></i></div>
+            <h4>3.5kW Hybrid</h4><p>Parallel capable, Wi-Fi monitoring</p>
+            <a class="whatsapp-btn" href="https://wa.me/2348146345280?text=I'm%20interested%20in%203.5kW%20Hybrid%20Inverter" target="_blank"><i class="fab fa-whatsapp"></i> Order now</a>
+        </div>
+        <div class="product-card">
+            <div class="product-img"><i class="fas fa-bolt"></i></div>
+            <h4>5kW 3‑phase</h4><p>Commercial use, 48V, high efficiency</p>
+            <a class="whatsapp-btn" href="https://wa.me/2348146345280?text=I'm%20interested%20in%205kW%203-phase%20Inverter" target="_blank"><i class="fab fa-whatsapp"></i> Order now</a>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="footer-grid">
+            <div class="footer-col">
+                <h4>Og Chinos Enterprise</h4>
+                <ul>
+                    <li><i class="fas fa-phone"></i> <a href="tel:+2348146345280">+234 814 634 5280</a></li>
+                    <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/2348146345280">WhatsApp</a></li>
+                    <li><i class="fas fa-map-pin"></i> Calabar, Nigeria</li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Quick links</h4>
+                <ul>
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="fans.html">Fans, cameras, bikes</a></li>
+                    <li><a href="solar.html">Solar & inverters</a></li>
+                    <li><a href="reviews.html">Reviews</a></li>
+                </ul>
+            </div>
+            <div class="footer-col">
+                <h4>Connect</h4>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-facebook"></i></a>
+                    <a href="#"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">© 2025 Og Chinos Enterprise – powered by the sun, trusted in Calabar.</div>
+    </footer>
+</body>
+</html>
