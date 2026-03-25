@@ -7,7 +7,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <style>
-        /* same base styles as fans.html */
         * { margin: 0; padding: 0; box-sizing: border-box; font-family: 'Inter', sans-serif; }
         :root {
             --primary: #2563eb; --secondary: #16a34a; --accent: #eab308;
@@ -37,21 +36,27 @@
             border-left: 8px solid var(--secondary); padding-left: 1.2rem;
         }
         .product-grid {
-            display: grid; grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            display: grid; grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
             gap: 2rem; max-width: 1300px; margin: 0 auto 3rem; padding: 0 5%;
         }
         .product-card {
             background: white; border-radius: 20px; box-shadow: var(--shadow);
-            padding: 1.8rem 1.2rem 1.5rem; text-align: center; transition: 0.2s;
+            padding: 1.5rem 1.2rem 1.5rem; text-align: center; transition: 0.2s;
             border: 1px solid var(--light-gray);
         }
         .product-card:hover { transform: translateY(-5px); border-color: var(--secondary); }
         .product-img {
-            background: #eef2ff; border-radius: 16px; padding: 1.5rem 0.5rem;
-            margin-bottom: 1rem; color: var(--primary); font-size: 3.5rem;
+            background: #f1f5f9; border-radius: 16px; padding: 1rem;
+            margin-bottom: 1rem; text-align: center;
+        }
+        .product-img img {
+            max-width: 100%; height: auto; border-radius: 12px; display: block; margin: 0 auto;
+        }
+        .product-img i {
+            font-size: 3rem; color: var(--primary); display: inline-block;
         }
         .product-card h4 { font-size: 1.3rem; font-weight: 700; margin: 0.5rem 0 0.3rem; }
-        .product-card p { color: var(--gray); font-size: 0.95rem; margin-bottom: 1.2rem; }
+        .product-card p { color: var(--gray); font-size: 0.95rem; margin-bottom: 1.2rem; line-height: 1.4; }
         .whatsapp-btn {
             display: inline-flex; align-items: center; justify-content: center; gap: 8px;
             background: #25D366; color: white; padding: 0.7rem 1.2rem; border-radius: 40px;
@@ -76,6 +81,9 @@
             margin-right: 0.5rem; color: var(--primary); box-shadow: 0 4px 8px rgba(0,0,0,0.05);
         }
         .copyright { text-align: center; padding: 2rem 5% 1rem; color: var(--gray); }
+        @media (max-width: 700px) {
+            .product-grid { grid-template-columns: 1fr; }
+        }
     </style>
 </head>
 <body>
@@ -91,51 +99,58 @@
 
     <div class="section-header">
         <h2>🔆 Solar Panels & Inverters</h2>
-        <p>High efficiency, durable, with installation support in Calabar.</p>
+        <p>High efficiency, durable, with installation support across Nigeria.</p>
     </div>
 
-    <!-- Solar panels (3 items) -->
+    <!-- Solar panels (3 items) with your images -->
     <h3 class="category-title"><i class="fas fa-solar-panel"></i> Solar Panels</h3>
     <div class="product-grid">
         <div class="product-card">
-            <div class="product-img"><i class="fas fa-solar-panel"></i></div>
-            <h4>200W Mono Panel</h4><p>Efficiency 21%, 12V, waterproof</p>
-            <a class="whatsapp-btn" href="https://wa.me/2348146345280?text=I'm%20interested%20in%20200W%20Mono%20Solar%20Panel" target="_blank"><i class="fab fa-whatsapp"></i> Order now</a>
+            <div class="product-img"><img src="images/africell-300w-solar-panel.png" alt="300W Solar Panel"></div>
+            <h4>300W Mono Solar Panel</h4>
+            <p>High‑efficiency monocrystalline, 21% conversion rate, durable aluminum frame. Perfect for homes.</p>
+            <a class="whatsapp-btn" href="https://wa.me/2348146345280?text=I'm%20interested%20in%20300W%20Mono%20Solar%20Panel" target="_blank"><i class="fab fa-whatsapp"></i> Order now</a>
         </div>
         <div class="product-card">
-            <div class="product-img"><i class="fas fa-solar-panel"></i></div>
-            <h4>350W Poly Panel</h4><p>Perfect for home systems, 24V</p>
+            <div class="product-img"><img src="images/solar_panel.jpg" alt="350W Solar Panel"></div>
+            <h4>350W Poly Solar Panel</h4>
+            <p>Reliable polycrystalline, 24V output, weather‑resistant. Ideal for residential and commercial systems.</p>
             <a class="whatsapp-btn" href="https://wa.me/2348146345280?text=I'm%20interested%20in%20350W%20Poly%20Solar%20Panel" target="_blank"><i class="fab fa-whatsapp"></i> Order now</a>
         </div>
         <div class="product-card">
-            <div class="product-img"><i class="fas fa-solar-panel"></i></div>
-            <h4>450W Bifacial</h4><p>Double-sided, 144 cells, 30% more power</p>
-            <a class="whatsapp-btn" href="https://wa.me/2348146345280?text=I'm%20interested%20in%20450W%20Bifacial%20Panel" target="_blank"><i class="fab fa-whatsapp"></i> Order now</a>
+            <div class="product-img"><img src="images/durable solar .jpg" alt="Durable Solar Panel"></div>
+            <h4>450W Bifacial Solar Panel</h4>
+            <p>Double‑sided power generation, 144 cells, 30% extra yield. Ultra‑durable for long‑term use.</p>
+            <a class="whatsapp-btn" href="https://wa.me/2348146345280?text=I'm%20interested%20in%20450W%20Bifacial%20Solar%20Panel" target="_blank"><i class="fab fa-whatsapp"></i> Order now</a>
         </div>
     </div>
 
-    <!-- Inverters (4 items) -->
+    <!-- Inverters (4 items) – using your images for three, one icon placeholder -->
     <h3 class="category-title"><i class="fas fa-microchip"></i> Inverters (Solar hybrid)</h3>
     <div class="product-grid">
         <div class="product-card">
-            <div class="product-img"><i class="fas fa-bolt"></i></div>
-            <h4>1kW Hybrid Inverter</h4><p>Pure sine wave, MPPT built-in</p>
-            <a class="whatsapp-btn" href="https://wa.me/2348146345280?text=I'm%20interested%20in%201kW%20Hybrid%20Inverter" target="_blank"><i class="fab fa-whatsapp"></i> Order now</a>
+            <div class="product-img"><img src="images/Mercury-3.5kva-Solar-Hybrid-Inverter.png" alt="3.5kVA Hybrid Inverter"></div>
+            <h4>3.5kVA Mercury Hybrid Inverter</h4>
+            <p>Pure sine wave, built‑in MPPT, LCD display. Supports solar and grid/battery input.</p>
+            <a class="whatsapp-btn" href="https://wa.me/2348146345280?text=I'm%20interested%20in%203.5kVA%20Mercury%20Hybrid%20Inverter" target="_blank"><i class="fab fa-whatsapp"></i> Order now</a>
+        </div>
+        <div class="product-card">
+            <div class="product-img"><img src="images/afriipower-3500va-solar-hybrid.jpg" alt="3.5kVA Afriipower Inverter"></div>
+            <h4>3.5kVA Afriipower Hybrid Inverter</h4>
+            <p>High‑performance, wide voltage range, intelligent fan control. Great for home backup.</p>
+            <a class="whatsapp-btn" href="https://wa.me/2348146345280?text=I'm%20interested%20in%203.5kVA%20Afriipower%20Hybrid%20Inverter" target="_blank"><i class="fab fa-whatsapp"></i> Order now</a>
+        </div>
+        <div class="product-card">
+            <div class="product-img"><img src="images/solar battery.jpg" alt="Solar Battery"></div>
+            <h4>5kVA Hybrid Inverter + Battery Ready</h4>
+            <p>48V system, high efficiency, expandable. Works seamlessly with lithium or lead‑acid batteries.</p>
+            <a class="whatsapp-btn" href="https://wa.me/2348146345280?text=I'm%20interested%20in%205kVA%20Hybrid%20Inverter" target="_blank"><i class="fab fa-whatsapp"></i> Order now</a>
         </div>
         <div class="product-card">
             <div class="product-img"><i class="fas fa-bolt"></i></div>
-            <h4>2.5kW Off-grid</h4><p>For fridges, TVs, fans, 24V system</p>
-            <a class="whatsapp-btn" href="https://wa.me/2348146345280?text=I'm%20interested%20in%202.5kW%20Off-grid%20Inverter" target="_blank"><i class="fab fa-whatsapp"></i> Order now</a>
-        </div>
-        <div class="product-card">
-            <div class="product-img"><i class="fas fa-bolt"></i></div>
-            <h4>3.5kW Hybrid</h4><p>Parallel capable, Wi-Fi monitoring</p>
-            <a class="whatsapp-btn" href="https://wa.me/2348146345280?text=I'm%20interested%20in%203.5kW%20Hybrid%20Inverter" target="_blank"><i class="fab fa-whatsapp"></i> Order now</a>
-        </div>
-        <div class="product-card">
-            <div class="product-img"><i class="fas fa-bolt"></i></div>
-            <h4>5kW 3‑phase</h4><p>Commercial use, 48V, high efficiency</p>
-            <a class="whatsapp-btn" href="https://wa.me/2348146345280?text=I'm%20interested%20in%205kW%203-phase%20Inverter" target="_blank"><i class="fab fa-whatsapp"></i> Order now</a>
+            <h4>1kW Off‑grid Inverter</h4>
+            <p>Compact pure sine wave inverter, perfect for small loads like fans, TV, lights.</p>
+            <a class="whatsapp-btn" href="https://wa.me/2348146345280?text=I'm%20interested%20in%201kW%20Off-grid%20Inverter" target="_blank"><i class="fab fa-whatsapp"></i> Order now</a>
         </div>
     </div>
 
@@ -146,7 +161,7 @@
                 <ul>
                     <li><i class="fas fa-phone"></i> <a href="tel:+2348146345280">+234 814 634 5280</a></li>
                     <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/2348146345280">WhatsApp</a></li>
-                    <li><i class="fas fa-map-pin"></i> Calabar, Nigeria</li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:info@ogchinos.com">info@ogchinos.com</a></li>
                 </ul>
             </div>
             <div class="footer-col">
@@ -166,7 +181,7 @@
                 </div>
             </div>
         </div>
-        <div class="copyright">© 2025 Og Chinos Enterprise – powered by the sun, trusted in Calabar.</div>
+        <div class="copyright">© 2025 Og Chinos Enterprise – powered by the sun, trusted nationwide.</div>
     </footer>
 </body>
 </html>
