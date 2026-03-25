@@ -44,17 +44,83 @@
         .reviewer i { font-size: 2.5rem; color: var(--primary); }
         .reviewer h4 { font-weight: 700; }
         .reviewer span { color: var(--gray); font-size: 0.9rem; }
-        .referral-highlight {
-            background: linear-gradient(145deg, var(--dark), #1a2e3f); color: white;
-            border-radius: 32px; padding: 2.5rem; text-align: center;
-            max-width: 800px; margin: 3rem auto; border: 1px solid #334155;
+        .referral-section {
+            background: linear-gradient(145deg, var(--dark), #1a2e3f);
+            color: white;
+            border-radius: 32px;
+            margin: 3rem auto;
+            max-width: 1100px;
+            padding: 2.5rem;
         }
-        .referral-highlight h3 { font-size: 2rem; margin-bottom: 1rem; }
-        .referral-highlight .big { font-size: 3rem; font-weight: 800; color: var(--accent); }
+        .referral-header {
+            text-align: center;
+            margin-bottom: 2rem;
+        }
+        .referral-header h3 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+        .referral-details {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 2rem;
+            justify-content: space-between;
+            margin-bottom: 2rem;
+        }
+        .referral-card {
+            flex: 1 1 250px;
+            background: rgba(255,255,255,0.08);
+            backdrop-filter: blur(4px);
+            border-radius: 24px;
+            padding: 1.5rem;
+            text-align: center;
+            border: 1px solid rgba(255,255,255,0.1);
+        }
+        .referral-card i {
+            font-size: 2.5rem;
+            color: var(--accent);
+            margin-bottom: 1rem;
+        }
+        .referral-card h4 {
+            font-size: 1.3rem;
+            margin-bottom: 0.5rem;
+        }
+        .referral-card p {
+            font-size: 0.95rem;
+            color: #cbd5e1;
+        }
+        .referral-highlight {
+            background: rgba(255,255,255,0.1);
+            border-radius: 24px;
+            padding: 1.5rem;
+            text-align: center;
+            margin: 1.5rem 0;
+        }
+        .referral-highlight .big {
+            font-size: 2rem;
+            font-weight: 800;
+            color: var(--accent);
+        }
+        .terms {
+            margin-top: 2rem;
+            padding-top: 1rem;
+            border-top: 1px solid rgba(255,255,255,0.2);
+            font-size: 0.85rem;
+            color: #cbd5e1;
+        }
+        .terms h5 {
+            font-size: 1rem;
+            margin-bottom: 0.5rem;
+            color: white;
+        }
+        .terms ul {
+            list-style: disc;
+            padding-left: 1.2rem;
+        }
         .btn-primary {
             display: inline-block; background: var(--accent); color: var(--dark);
             padding: 0.9rem 2.2rem; border-radius: 60px; font-weight: 600;
-            text-decoration: none; margin-top: 1.5rem;
+            text-decoration: none; margin-top: 1rem;
         }
         .footer {
             background: var(--light); padding: 3rem 5% 1rem; border-top: 1px solid var(--light-gray);
@@ -87,40 +153,85 @@
     </nav>
 
     <div class="section-header">
-        <h2>💬 Customer Reviews & Referral Perks</h2>
-        <p>What Calabar neighbours say about us + how you earn.</p>
+        <h2>💬 Customer Reviews</h2>
+        <p>What our customers across Nigeria say about us</p>
     </div>
 
     <div class="review-grid">
         <div class="review-card">
             <i class="fas fa-quote-left"></i>
             <p>"The solar fan I bought works even during long outages. Fast delivery to my door!"</p>
-            <div class="reviewer"><i class="fas fa-user-circle"></i><div><h4>Emeka O.</h4><span>Calabar South</span></div></div>
+            <div class="reviewer"><i class="fas fa-user-circle"></i><div><h4>Emeka O.</h4><span>Lagos</span></div></div>
         </div>
         <div class="review-card">
             <i class="fas fa-quote-left"></i>
             <p>"I installed the PTZ camera with solar – the AI detection is spot on. Referred two friends already."</p>
-            <div class="reviewer"><i class="fas fa-user-circle"></i><div><h4>Grace U.</h4><span>State Housing</span></div></div>
+            <div class="reviewer"><i class="fas fa-user-circle"></i><div><h4>Grace U.</h4><span>Abuja</span></div></div>
         </div>
         <div class="review-card">
             <i class="fas fa-quote-left"></i>
             <p>"Ordered an electric bike on Monday, got it Tuesday. Battery lasts all week. Og Chinos is reliable!"</p>
-            <div class="reviewer"><i class="fas fa-user-circle"></i><div><h4>Michael A.</h4><span>University of Calabar</span></div></div>
+            <div class="reviewer"><i class="fas fa-user-circle"></i><div><h4>Michael A.</h4><span>Port Harcourt</span></div></div>
         </div>
         <div class="review-card">
             <i class="fas fa-quote-left"></i>
             <p>"The 350W panel + inverter runs my shop for 8hrs straight. Thank you for the installation tips."</p>
-            <div class="reviewer"><i class="fas fa-user-circle"></i><div><h4>Chioma N.</h4><span>Watt Market</span></div></div>
+            <div class="reviewer"><i class="fas fa-user-circle"></i><div><h4>Chioma N.</h4><span>Enugu</span></div></div>
         </div>
     </div>
 
-    <!-- Referral benefits -->
-    <div class="referral-highlight">
-        <i class="fas fa-gift" style="font-size:3.5rem; color:var(--accent); margin-bottom:1rem;"></i>
-        <h3>Refer & earn instant rewards</h3>
-        <p>Tell a friend about us. When they buy any solar product, you get <span class="big">10% commission</span> or a free solar lamp!</p>
-        <p style="margin-top:1.5rem;">👉 Share your unique code: <strong>OG-CALABAR</strong> – we track referrals easily.</p>
-        <a href="https://wa.me/2348146345280?text=I%20want%20to%20refer%20someone%20(my%20code%20OG-CALABAR)" class="btn-primary"><i class="fab fa-whatsapp"></i> Refer now on WhatsApp</a>
+    <!-- Referral Program Section -->
+    <div class="referral-section">
+        <div class="referral-header">
+            <i class="fas fa-gift" style="font-size: 3rem; color: var(--accent); margin-bottom: 0.5rem; display: inline-block;"></i>
+            <h3>Refer & Earn Rewards!</h3>
+            <p>Share the power of solar and earn cash rewards. No limits – the more you refer, the more you earn.</p>
+        </div>
+
+        <div class="referral-details">
+            <div class="referral-card">
+                <i class="fas fa-naira-sign"></i>
+                <h4>₦1,000 – ₦10,000 Per Referral</h4>
+                <p>Reward depends on the purchase amount made by your referral. Higher purchase = higher reward!</p>
+            </div>
+            <div class="referral-card">
+                <i class="fas fa-infinity"></i>
+                <h4>No Limit</h4>
+                <p>Refer as many friends as you like. Every successful referral earns you cash – keep earning!</p>
+            </div>
+            <div class="referral-card">
+                <i class="fas fa-percent"></i>
+                <h4>20% Off for Consistent Customers</h4>
+                <p>Loyal customers who refer multiple times or make repeat purchases get 20% discount on future orders.</p>
+            </div>
+        </div>
+
+        <div class="referral-highlight">
+            <p><strong>How it works:</strong></p>
+            <p>1️⃣ Tell a friend about Og Chinos Enterprise.<br>
+            2️⃣ They make a purchase (any product).<br>
+            3️⃣ You inform us via <strong>WhatsApp</strong> with your name, their name, and order details.<br>
+            4️⃣ Once the purchase is confirmed and delivered, we transfer your reward directly to your bank account.</p>
+            <p style="margin-top: 1rem;">💰 <strong>Reward Range:</strong> ₦1,000 – ₦10,000 per successful referral (based on order value).</p>
+            <a href="https://wa.me/2348146345280?text=I%20want%20to%20refer%20someone%20for%20rewards" class="btn-primary"><i class="fab fa-whatsapp"></i> Start Referring on WhatsApp</a>
+        </div>
+
+        <!-- Terms and Conditions (protecting the business) -->
+        <div class="terms">
+            <h5>📜 Terms & Conditions</h5>
+            <ul>
+                <li>Referral reward is calculated as a percentage of the referred customer's total purchase value, ranging from ₦1,000 to ₦10,000 per successful referral.</li>
+                <li>The referred customer must be a new client (first purchase with Og Chinos Enterprise).</li>
+                <li>Referral must be reported via WhatsApp <strong>before or at the time of purchase</strong> for the reward to be valid.</li>
+                <li>Reward is paid only after the referred customer's order is confirmed, fully paid for, and delivered (or picked up).</li>
+                <li>Reward is paid via bank transfer to the referrer's Nigerian bank account. Account details must be provided.</li>
+                <li>There is no limit to the number of referrals you can make; each qualifying referral earns a reward.</li>
+                <li>The 20% discount for consistent customers applies after at least <strong>3 successful referrals</strong> or <strong>cumulative purchases of ₦500,000</strong> (whichever comes first). Discount is on future purchases and cannot be combined with other offers.</li>
+                <li>Og Chinos Enterprise reserves the right to modify or terminate the referral program at any time without prior notice.</li>
+                <li>Fraudulent referrals (e.g., self-referral, fake accounts) will result in disqualification and forfeiture of rewards.</li>
+                <li>Reward payments may take up to 7 business days after confirmation of the referred purchase.</li>
+            </ul>
+        </div>
     </div>
 
     <footer class="footer">
@@ -130,7 +241,7 @@
                 <ul>
                     <li><i class="fas fa-phone"></i> <a href="tel:+2348146345280">+234 814 634 5280</a></li>
                     <li><i class="fab fa-whatsapp"></i> <a href="https://wa.me/2348146345280">WhatsApp</a></li>
-                    <li><i class="fas fa-map-pin"></i> Calabar, Nigeria</li>
+                    <li><i class="fas fa-envelope"></i> <a href="mailto:info@ogchinos.com">info@ogchinos.com</a></li>
                 </ul>
             </div>
             <div class="footer-col">
@@ -150,7 +261,7 @@
                 </div>
             </div>
         </div>
-        <div class="copyright">© 2025 Og Chinos Enterprise – powered by the sun, trusted in Calabar.</div>
+        <div class="copyright">© 2025 Og Chinos Enterprise – powered by the sun, trusted nationwide.</div>
     </footer>
 </body>
-</html>
+                    </html>
