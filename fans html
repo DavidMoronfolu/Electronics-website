@@ -24,7 +24,7 @@
         .logo i { color: var(--secondary); margin-right: 8px; }
         .nav-links { display: flex; gap: 2rem; list-style: none; flex-wrap: wrap; }
         .nav-links a {
-            text-decoration: none; font-weight: 600; color: var(--dark-light);
+            text-decoration: none; font-weight: 600; color: #334155;
             padding-bottom: 4px; border-bottom: 2px solid transparent;
         }
         .nav-links a:hover { color: var(--primary); border-bottom-color: var(--secondary); }
@@ -102,29 +102,22 @@
         <p>High‑quality products with nationwide delivery. Click 'Order now' to chat on WhatsApp.</p>
     </div>
 
-    <!-- SOLAR FANS -->
+    <!-- SOLAR FANS – only the two standing fans you provided -->
     <h3 class="category-title"><i class="fas fa-fan" style="margin-right: 10px;"></i> Solar Fans</h3>
     <div class="product-grid">
-        <!-- Standing Fan uses solar fan1.jpg -->
+        <!-- Standing Fan 1 using solar fan1.jpg -->
         <div class="product-card">
-            <div class="product-img"><img src="images/solar fan1.jpg" alt="Standing Fan 18 inch"></div>
+            <div class="product-img"><img src="images/solar fan1.jpg" alt="Solar Standing Fan 18 inch"></div>
             <h4>Standing Fan 18"</h4>
             <p>Rechargeable, DC motor, 12hr backup. Silent operation, ideal for homes and offices.</p>
             <a class="whatsapp-btn" href="https://wa.me/2348146345280?text=I'm%20interested%20in%20Standing%20Fan%2018%22%20(solar)" target="_blank"><i class="fab fa-whatsapp"></i> Order now</a>
         </div>
-        <!-- Ceiling Fan – using icon because no ceiling fan image provided (avoids showing standing fan) -->
+        <!-- Standing Fan 2 using solar fan2.jpg -->
         <div class="product-card">
-            <div class="product-img"><i class="fas fa-fan" style="font-size: 4rem;"></i></div>
-            <h4>Ceiling Fan Solar</h4>
-            <p>Remote control, 3 speeds, solar ready. Elegant design, saves energy.</p>
-            <a class="whatsapp-btn" href="https://wa.me/2348146345280?text=I'm%20interested%20in%20Ceiling%20Fan%20Solar" target="_blank"><i class="fab fa-whatsapp"></i> Order now</a>
-        </div>
-        <!-- Table Fan uses solar fan2.jpg -->
-        <div class="product-card">
-            <div class="product-img"><img src="images/solar fan2.jpg" alt="Table Fan 12 inch"></div>
-            <h4>Table Fan 12"</h4>
-            <p>Portable, USB charging, low noise. Perfect for personal cooling anywhere.</p>
-            <a class="whatsapp-btn" href="https://wa.me/2348146345280?text=I'm%20interested%20in%20Table%20Fan%2012%22%20solar" target="_blank"><i class="fab fa-whatsapp"></i> Order now</a>
+            <div class="product-img"><img src="images/solar fan2.jpg" alt="Solar Standing Fan Deluxe"></div>
+            <h4>Standing Fan Deluxe</h4>
+            <p>High‑efficiency motor, longer battery life, remote control, 3 speed settings.</p>
+            <a class="whatsapp-btn" href="https://wa.me/2348146345280?text=I'm%20interested%20in%20Standing%20Fan%20Deluxe" target="_blank"><i class="fab fa-whatsapp"></i> Order now</a>
         </div>
     </div>
 
