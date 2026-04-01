@@ -102,30 +102,33 @@
         <p>High‑quality products with nationwide delivery. Click 'Order now' to chat on WhatsApp.</p>
     </div>
 
-    <!-- SOLAR FANS (icons because no specific images provided) -->
+    <!-- SOLAR FANS -->
     <h3 class="category-title"><i class="fas fa-fan" style="margin-right: 10px;"></i> Solar Fans</h3>
     <div class="product-grid">
+        <!-- Standing Fan uses solar fan1.jpg -->
         <div class="product-card">
-            <div class="product-img"><i class="fas fa-fan"></i></div>
+            <div class="product-img"><img src="images/solar fan1.jpg" alt="Standing Fan 18 inch"></div>
             <h4>Standing Fan 18"</h4>
             <p>Rechargeable, DC motor, 12hr backup. Silent operation, ideal for homes and offices.</p>
             <a class="whatsapp-btn" href="https://wa.me/2348146345280?text=I'm%20interested%20in%20Standing%20Fan%2018%22%20(solar)" target="_blank"><i class="fab fa-whatsapp"></i> Order now</a>
         </div>
+        <!-- Ceiling Fan – using icon because no ceiling fan image provided (avoids showing standing fan) -->
         <div class="product-card">
-            <div class="product-img"><i class="fas fa-fan"></i></div>
+            <div class="product-img"><i class="fas fa-fan" style="font-size: 4rem;"></i></div>
             <h4>Ceiling Fan Solar</h4>
             <p>Remote control, 3 speeds, solar ready. Elegant design, saves energy.</p>
             <a class="whatsapp-btn" href="https://wa.me/2348146345280?text=I'm%20interested%20in%20Ceiling%20Fan%20Solar" target="_blank"><i class="fab fa-whatsapp"></i> Order now</a>
         </div>
+        <!-- Table Fan uses solar fan2.jpg -->
         <div class="product-card">
-            <div class="product-img"><i class="fas fa-fan"></i></div>
+            <div class="product-img"><img src="images/solar fan2.jpg" alt="Table Fan 12 inch"></div>
             <h4>Table Fan 12"</h4>
             <p>Portable, USB charging, low noise. Perfect for personal cooling anywhere.</p>
             <a class="whatsapp-btn" href="https://wa.me/2348146345280?text=I'm%20interested%20in%20Table%20Fan%2012%22%20solar" target="_blank"><i class="fab fa-whatsapp"></i> Order now</a>
         </div>
     </div>
 
-    <!-- CAMERAS (using your provided images from /images folder) -->
+    <!-- CAMERAS (unchanged) -->
     <h3 class="category-title"><i class="fas fa-video" style="margin-right: 10px;"></i> AI PTZ & Security Cameras</h3>
     <div class="product-grid">
         <div class="product-card">
@@ -148,7 +151,7 @@
         </div>
     </div>
 
-    <!-- BIKES (using your provided images from /images folder) -->
+    <!-- BIKES (unchanged) -->
     <h3 class="category-title"><i class="fas fa-bicycle" style="margin-right: 10px;"></i> Electric Bikes</h3>
     <div class="product-grid">
         <div class="product-card">
@@ -171,7 +174,7 @@
         </div>
     </div>
 
-    <!-- LED SOLAR LIGHTS (using your provided images from /images folder) -->
+    <!-- LED SOLAR LIGHTS (unchanged) -->
     <h3 class="category-title"><i class="fas fa-lightbulb" style="margin-right: 10px;"></i> LED Solar Lights</h3>
     <div class="product-grid">
         <div class="product-card">
